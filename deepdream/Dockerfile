@@ -1,5 +1,7 @@
 FROM debian:latest
-MAINTAINER Mike Bartoli "michael.bartoli@pomona.edu"
+MAINTAINER Spencer Dawson "spec4d@gmail.com"
+#Forked from mrbartoli's deepdream docker image "michael.bartoli@pomona.edu"
+#Biggest change was to expose port used by iPython and launch iPython Notebook
 
 RUN apt-get clean && apt-get update && apt-get install -y \
 	bc \
@@ -59,6 +61,7 @@ ENV PYTHONPATH=/root/caffe/python
 WORKDIR /home
 RUN git clone https://github.com/google/deepdream
 WORKDIR /home/deepdream
+RUN ipython notebook dream.ipynb
 
 
 
