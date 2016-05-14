@@ -62,7 +62,8 @@ WORKDIR /home
 RUN git clone https://github.com/google/deepdream
 WORKDIR /home/deepdream
 
-CMD ipython notebook --no-browser dream.ipynb
+EXPOSE 8888
+CMD ipython notebook dream.ipynb --no-browser
 
 
 
