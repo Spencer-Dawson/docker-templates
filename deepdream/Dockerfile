@@ -61,7 +61,8 @@ ENV PYTHONPATH=/root/caffe/python
 WORKDIR /home
 RUN git clone https://github.com/google/deepdream
 WORKDIR /home/deepdream
-RUN ipython notebook dream.ipynb
+
+CMD["ipython notebook dream.ipynb"]
 
 
 
