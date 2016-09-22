@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:latest
 MAINTAINER Spencer Dawson "spec4d@gmail.com"
 #Forked from mrbartoli's deepdream docker image "michael.bartoli@pomona.edu"
 #Biggest change was to expose port used by iPython and launch iPython Notebook
