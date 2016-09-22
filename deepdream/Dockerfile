@@ -11,7 +11,7 @@ RUN apt-get clean && apt-get update && apt-get install -y \
 	g++ \
 	git \
 	ipython \
-	ipython-notebook\
+	ipython-notebook \
 	libatlas-base-dev \
 	libatlas-dev \
 	libboost-all-dev \
