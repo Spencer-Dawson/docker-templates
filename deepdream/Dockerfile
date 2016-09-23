@@ -59,13 +59,9 @@ RUN cd /root/caffe && \
 
 ENV PYTHONPATH=/root/caffe/python
 
-WORKDIR /home
+WORKDIR /root
 RUN git clone https://github.com/google/deepdream
-WORKDIR /home/deepdream
+WORKDIR /root/deepdream
 
 EXPOSE 8888
-CMD ipython notebook dream.ipynb --no-browser
-
-
-
-
+CMD ipython notebook dream.ipynb --ip='*' --no-browser
