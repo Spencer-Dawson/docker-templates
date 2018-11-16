@@ -5,9 +5,9 @@ FROM node:8-stretch
 # doing in one step for better docker layer efficiency
 RUN apt-get update && \
 # general utilities
-apt-get install --fix-missing -y git nano wget zip && \
-apt-get install --fix-missing -y \
+apt-get install --fix-missing -y git nano wget zip nginx && \
 #python 3.5 build tools
+apt-get install --fix-missing -y \
 python3-pip binutils libproj-dev gdal-bin libpq-dev libncurses5-dev \
 libxml2-dev libxslt1-dev python-dev tzdata libsasl2-dev \
 default-libmysqlclient-dev && \
