@@ -17,4 +17,4 @@ ruby2.3 ruby2.3-dev gem && \
 # purge update cache to save space
 rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install boto3 awscli
+RUN pip3 install boto3 awscli virtualenv
