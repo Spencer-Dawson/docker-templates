@@ -18,3 +18,5 @@ ruby2.3 ruby2.3-dev gem && \
 rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install boto3 awscli virtualenv
+
+RUN gem install tzinfo-data bundler rake
