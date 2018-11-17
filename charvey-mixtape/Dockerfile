@@ -13,7 +13,7 @@ libxml2-dev libxslt1-dev python-dev tzdata libsasl2-dev \
 default-libmysqlclient-dev && \
 #Rails 2.3 build tools
 apt-get install --fix-missing -y \
-ruby2.3 ruby2.3-dev gem && \
+ruby2.3 ruby2.3-dev gem libssl-dev && \
 # purge update cache to save space
 rm -rf /var/lib/apt/lists/*
 
